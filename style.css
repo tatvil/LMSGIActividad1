@@ -1,0 +1,112 @@
+* {
+    font-family: Gotham, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    --color-oscuro:#0054a4;
+    --color-medio: #007dc3;
+    --color-claro: #a4d7f4;
+    --color-secundario: #e11b22;
+    --color-secundario-claro: #e1abb2;
+}
+
+#contenedor > header
+{
+    width: 100%;
+    position: fixed;
+    font-size:1.25em;
+    padding: 5px;
+    top: 0px;
+    height: 100px;
+    text-align: center;
+    color: var(--color-claro);
+    background-color: var(--color-oscuro);
+    text-decoration: none; 
+}
+
+nav{
+    position: fixed;  
+    width: 100%;
+    list-style-type: none;
+    top:  100px;
+    background-color: var(--color-oscuro);
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-oscuro);
+  }
+  
+nav li {
+    display: inline;
+    float: left;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: var(--color-oscuro);
+  }
+  
+nav li a:hover {
+    background-color: var(--color-medio);
+  }
+
+#contenedor {
+    top:170px;
+    position: fixed;
+    width:100%;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+section
+  {
+    left:0;
+    display: inline-block;
+    width:80%;
+    border: 2.5px solid var(--color-oscuro);
+	border-radius: 10px;
+  }
+
+  section > header
+    {
+        font-size:1.5em;
+        padding: 5px;
+        text-align: center;
+        color: var(--color-oscuro);
+        text-decoration: none;
+    }
+
+aside
+  {
+    right: 0;
+    display: inline-block;
+    width:20%;
+    border: 2.5px solid var(--color-oscuro);
+	border-radius: 10px;
+  }
+
+footer
+    {
+        position:fixed; 
+        bottom: 0;
+        width:98%;
+        padding: 1%;
+      text-align: center;
+      color:var(--color-claro);
+      background-color: var(--color-oscuro);
+    }
