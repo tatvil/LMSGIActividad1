@@ -90,6 +90,7 @@ section
     width:75%;
     border: 2.5px solid var(--color-oscuro);
 	  border-radius: 10px;
+    margin: 1%;
   }
 
 section > header
@@ -120,6 +121,9 @@ article > p
     {
       font-size: .8em;
       text-align: justify;
+      text-indent: 30px;
+      initial-letter: var(--color-secundario);
+      padding-top: 10px;
     }
 
 .fotoperfil {
