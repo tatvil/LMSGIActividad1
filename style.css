@@ -63,8 +63,6 @@ nav li a:hover {
     width:100%;
     display: block;
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -77,9 +75,9 @@ section
   {
     left:0;
     display: inline-block;
-    width:80%;
+    width:75%;
     border: 2.5px solid var(--color-oscuro);
-	border-radius: 10px;
+	  border-radius: 10px;
   }
 
   section > header
@@ -100,20 +98,32 @@ section > footer
         text-decoration: italic;
     }
 
+article
+    {
+      margin: 1%;
+    }
+
+article > p
+    {
+      font-size: .8em;
+      text-align: justify;
+    }
 aside
   {
     right: 0;
+    top: 0;
     display: inline-block;
     width:20%;
+    height: 95%;
     border: 2.5px solid var(--color-oscuro);
-	border-radius: 10px;
+	  border-radius: 10px;
   }
 
 footer
     {
         position:fixed; 
         bottom: 0;
-        width:98%;
+        width:100%;
         padding: 1%;
       text-align: center;
       color:var(--color-claro);
