@@ -63,8 +63,6 @@ nav li a:hover {
     width:100%;
     display: block;
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -77,7 +75,7 @@ section
   {
     left:0;
     display: inline-block;
-    width:80%;
+    width:75%;
     border: 2.5px solid var(--color-oscuro);
 	  border-radius: 10px;
   }
@@ -91,20 +89,44 @@ section
         text-decoration: none;
     }
 
+section > footer
+    {
+        font-size:0.8em;
+        padding: 5px;
+        text-align: center;
+        color: var(--color-oscuro);
+        text-decoration: italic;
+    }
+
+article
+    {
+      margin: 1%;
+    }
+
+article > p
+    {
+      font-size: .8em;
+      text-align: justify;
+    }
+    
 aside
   {
     right: 0;
-    width:15%;
+    float: right;
+    top: 0;
+
+    width:20%;
+    height: 95%;
     border: 2.5px solid var(--color-oscuro);
 	  border-radius: 10px;
-    float: right;
+
   }
 
 footer
     {
         position:fixed; 
         bottom: 0;
-        width:98%;
+        width:100%;
         padding: 1%;
       text-align: center;
       color:var(--color-claro);
