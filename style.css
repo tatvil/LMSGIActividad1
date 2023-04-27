@@ -52,10 +52,16 @@ nav li a {
     text-decoration: none;
     background-color: var(--color-oscuro);
   }
+
   
 nav li a:hover {
     background-color: var(--color-medio);
   }
+
+.active {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+  }  
 
 #contenedor {
     top:170px;
@@ -80,7 +86,7 @@ section
 	  border-radius: 10px;
   }
 
-  section > header
+section > header
     {
         font-size:1.5em;
         padding: 5px;
@@ -108,13 +114,12 @@ article > p
       font-size: .8em;
       text-align: justify;
     }
-    
+
 aside
   {
     right: 0;
     float: right;
     top: 0;
-
     width:20%;
     height: 95%;
     border: 2.5px solid var(--color-oscuro);
