@@ -91,6 +91,15 @@ section
         text-decoration: none;
     }
 
+section > footer
+    {
+        font-size:0.8em;
+        padding: 5px;
+        text-align: center;
+        color: var(--color-oscuro);
+        text-decoration: italic;
+    }
+
 aside
   {
     right: 0;
