@@ -18,18 +18,28 @@
     top: 0px;
     height: 200px;
     text-align: center;
-    color: white;
+    color: var(--color-oscuro);
+    background-image: url("../images/banner.jpg");
     background-color: var(--color-oscuro);
     text-decoration: none; 
+    
 }
 
 header > .logo {
-  height: 100%;
+  height: 98%;
   right: 0;
   display: inline;
   float: left;
+  border-radius: 50%;
+  border-color: var(--color-claro) 10px solid;
 }
 
+/* 
+
+MENUS
+-----
+Queremos que queden en horizontal, del mismo color y que el menú activo sea de otro color, para que se diferencie
+*/
 .active {
   background-color: var(--color-secundario);
   border-radius: 10px;
@@ -88,8 +98,7 @@ section
     left: 0; top: 0;
     float: left;
     width:75%;
-    border: 2.5px solid var(--color-oscuro);
-	  border-radius: 10px;
+    border-bottom: 2.5px solid var(--color-claro);
     margin: 1%;
   }
 
@@ -126,25 +135,22 @@ article > p
       padding-top: 10px;
     }
 
-.fotoperfil {
-  vertical-align: middle;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
 aside
   {
     right: 0; top: 0;
     float: right; 
     top: 0;
     width:20%;
-    height: 95%;
-    border: 2.5px solid var(--color-oscuro);
-	  border-radius: 10px;
     padding: 1%;
     margin: 1%;
   }
+
+  aside > picture
+    {
+      max-width: 90%;
+    }
+
+  /* footer es el pie de página y aparece en todas y cada una de las paginas de nuestra web */
 
 footer
     {
@@ -152,7 +158,29 @@ footer
         bottom: 0;
         width:100%;
         padding: 1%;
-      text-align: center;
-      color:var(--color-claro);
-      background-color: var(--color-oscuro);
+        text-align: center;
+        color:var(--color-claro);
+        background-color: var(--color-oscuro);
     }
+
+/*
+FORMULARIO
+*/
+
+/* fieldset: es cada grupo de datos que aparece en el formulario de contacto.html */
+
+fieldset{
+  background-color: var(--color-claro);
+  margin:10px;
+  border-color: var(--color-oscuro);
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.instrucciones{
+  background-color: var(--color-secundario-claro);
+  margin:10px;
+  border-color: var(--color-oscuro);
+  border-radius: 10px;
+  padding: 1%;
+}
