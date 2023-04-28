@@ -5,26 +5,212 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad1 - Grupo 16</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <div id="contenedor">
         <header>
-            <img class="logo" src="logo.jpg">
+            <img class="logo" src="images/logo.jpg" alt="logo">
             <h1>Contacto</h1>
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>
+                <li><a href="localizacion.html">Localización</a></li>
                 <li><a href="quienes-somos.html">Quienes somos</a></li>
                 <li><a href="areas-de-actuacion.html">Areas de actuacion</a></li>
                 <li><a class="active" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <section>
-            <header>Cabecera seccion</header>
-            <article>Articulo de la seccion</article>
-            <footer>footer de la seccion</footer>
+            <form action="#">
+                <fieldset class="menor">
+                    <legend>Datos personales (1)</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="introduce tu nombre" required/><br/>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="introduce tus apellidos" size="40" required/><br/>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="introduce tu direccion" size="50" required><br/>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" name="ciudad" id="ciudad" placeholder="introduce ciudad" required><br/>
+                    <label for="provincia">Provincia:</label>
+                    <select name="provincia" id="provincia">
+                        <option value="">Selecciona una provincia</option>
+                        <option value="alava">Alava</option>
+                        <option value="albacete">Albacete</option>
+                        <option value="alicante">Alicante</option>
+                        <option value="almeria">Almeria</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="avila">Avila</option>
+                        <option value="badajoz">Badajoz</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="burgos">Burgos</option>
+                        <option value="caceres">Caceres</option>
+                        <option value="cadiz">Cadiz</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="castellon">Castellon</option>
+                        <option value="Ceuta">Ceuta</option>
+                        <option value="ciudad-real">Ciudad Real</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="cuenca">Cuenca</option>
+                        <option value="gerona">Gerona</option>
+                        <option value="granada">Granada</option>
+                        <option value="guadalajara">Guadalajara</option>
+                        <option value="guipuzcoa">Guipuzcoa</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="huesca">Huesca</option>
+                        <option value="islas-baleares">Islas Baleares</option>
+                        <option value="jaen">Jaen</option>
+                        <option value="la-coruña">La Coruña</option>
+                        <option value="la-rioja">La Rioja</option>
+                        <option value="las-palmas">Las Palmas de Gran Canaria</option>
+                        <option value="leon">Leon</option>
+                        <option value="lerida">Lerida</option>
+                        <option value="lugo">Lugo</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="malaga">Malaga</option>
+                        <option value="Melilla">Melilla</option>
+                        <option value="murcia">Murcia</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="orense">Orense</option>
+                        <option value="palencia">Palencia</option>
+                        <option value="pontevedra">Pontevedra</option>
+                        <option value="salamanca">Salamanca</option>
+                        <option value="tenerife">Santa Cruz de Tenerife</option>
+                        <option value="segovia">Segovia</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="soria">Soria</option>
+                        <option value="tarragona">Tarragona</option>
+                        <option value="teruel">Teruel</option>
+                        <option value="toledo">Toledo</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="valladolid">Valladolid</option>
+                        <option value="vizcaya">Vizcaya</option>
+                        <option value="zamora">Zamora</option>
+                        <option value="zaragoza">Zaragoza</option>
+                    </select><br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" min="10" max="17" step="1" name="edad" id="edad" placeholder="10"/>
+                </fieldset>
+                <fieldset class="adulto">
+                    <legend>Datos personales (2)(3)</legend>
+                    <label for="nombre2">Nombre:</label>
+                    <input type="text" name="nombre2" id="nombre2"
+                     placeholder="introduce tu nombre" required/><br>
+                    <label for="apellidos2">Apellidos:</label>
+                    <input type="text" name="apellidos2" id="apellidos2" placeholder="introduce tus apellidos" size="40" required/><br>
+                    <label for="dni2">Dni:</label>
+                    <input type="text" name="dni2" id="dni2" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="12345678A" maxlength="9" required>
+                    <label for="direccion2">Dirección:</label>
+                    <input type="text" name="direccion2" id="direccion2"  placeholder="introduce tu direccion" size="50" required><br>
+                    <label for="ciudad2">Ciudad:</label>
+                    <input type="text" name="ciudad2" id="ciudad2" placeholder="introduce ciudad" required><br>
+                    <label for="provincia2">Provincia:</label>
+                    <select name="provincia2" id="provincia2">
+                        <option value="">Selecciona una provincia</option>
+                        <option value="alava">Alava</option>
+                        <option value="albacete">Albacete</option>
+                        <option value="alicante">Alicante</option>
+                        <option value="almeria">Almeria</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="avila">Avila</option>
+                        <option value="badajoz">Badajoz</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="burgos">Burgos</option>
+                        <option value="caceres">Caceres</option>
+                        <option value="cadiz">Cadiz</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="castellon">Castellon</option>
+                        <option value="Ceuta">Ceuta</option>
+                        <option value="ciudad-real">Ciudad Real</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="cuenca">Cuenca</option>
+                        <option value="gerona">Gerona</option>
+                        <option value="granada">Granada</option>
+                        <option value="guadalajara">Guadalajara</option>
+                        <option value="guipuzcoa">Guipuzcoa</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="huesca">Huesca</option>
+                        <option value="islas-baleares">Islas Baleares</option>
+                        <option value="jaen">Jaen</option>
+                        <option value="la-coruña">La Coruña</option>
+                        <option value="la-rioja">La Rioja</option>
+                        <option value="las-palmas">Las Palmas de Gran Canaria</option>
+                        <option value="leon">Leon</option>
+                        <option value="lerida">Lerida</option>
+                        <option value="lugo">Lugo</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="malaga">Malaga</option>
+                        <option value="Melilla">Melilla</option>
+                        <option value="murcia">Murcia</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="orense">Orense</option>
+                        <option value="palencia">Palencia</option>
+                        <option value="pontevedra">Pontevedra</option>
+                        <option value="salamanca">Salamanca</option>
+                        <option value="tenerife">Santa Cruz de Tenerife</option>
+                        <option value="segovia">Segovia</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="soria">Soria</option>
+                        <option value="tarragona">Tarragona</option>
+                        <option value="teruel">Teruel</option>
+                        <option value="toledo">Toledo</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="valladolid">Valladolid</option>
+                        <option value="vizcaya">Vizcaya</option>
+                        <option value="zamora">Zamora</option>
+                        <option value="zaragoza">Zaragoza</option>
+                    </select><br>
+        
+                    <label for="sexo">Sexo:</label><br>
+                    <input type="radio" name="sexo" value="hombre">Hombre<br>
+                    <input type="radio" name="sexo"  value="mujer">Mujer<br>
+                    <label for="edad2">Edad:</label>
+                    <input type="number" min="18" max="100" step="1" name="edad2" id="edad2" placeholder="18"/> <br>
+                    <label for="nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                    <br>
+                    <label for="telefono"> Teléfono: </label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="+34-123456789" pattern="[+][0-9]{2}-[0-9]{9}" size="13"  required/><br>
+                    <label for="email">Dirección de correo electrónico:</label>
+                    <input type="email" name="correo" id="email" placeholder="direccion@mail.com" size="40" required/><br>
+                    <input type="hidden"  name="identificacion" value="1222"/>  
+                </fieldset>
+                <fieldset class="informacion">
+                    <legend>Datos informativos</legend>
+                    <label for="instrumento">Instrumento:</label><br>
+                    <textarea name="textarea" id="instrumento" cols="30" rows="4"></textarea><br>
+                    <label for="experiencia">Experiencia:</label>
+                    <input type="radio" name="experiencia"  value="S">Si
+                    <input type="radio" name="experiencia"   value="N">No <br>
+                    <label for="antiguedad">Experiencia en años:</label>
+                    <input type="text" name="antiguedad" /><br>
+                    <label for="interes">Intereses formativos</label>
+                    <input type="radio" name="interes"  value="conservatorio">Ingresar en conservatorio de música
+                    <input type="radio" name="interes" value="hobbie" >Hobby <br>
+                    <label for="material">¿Posee instrumento?</label>
+                    <input type="radio" name="material"  value="Si">Si
+                    <input type="radio" name="material"  value="No">No <br>
+                    
+                </fieldset>
+                <fieldset class="condiciones">
+                    <input type="checkbox" name="privacidad" value="aceptar">He leido y acepto los terminos y condiciones de uso.<br>
+                    <input type="reset" value="Reiniciar formulario"/>
+                    <input type="submit" value="Enviar formulario"/>
+                </fieldset>
+                <hr>
+                <div class="instrucciones">
+                    <ol>
+                        <li>Rellenar en caso de ser menor de edad</li>
+                        <li>Rellenar padres o tutores de menores de edad</li>
+                        <li>Rellenar mayores de edad</li>
+                    </ol>
+                </div>
+            </form>
+        
         </section>
         <aside>aside</aside>
         <footer>Copyright 2023</footer>
