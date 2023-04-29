@@ -40,6 +40,7 @@ MENUS
 -----
 Queremos que queden en horizontal, del mismo color y que el menú activo sea de otro color, para que se diferencie
 */
+
 .active {
   background-color: var(--color-secundario);
   border-radius: 10px;
@@ -140,16 +141,28 @@ aside
     right: 0; top: 0;
     float: right; 
     top: 0;
-    width:20%;
+    width:15%;
     padding: 1%;
     margin: 1%;
   }
 
-  aside > picture
-    {
-      max-width: 90%;
-    }
-
+aside > header
+  {
+    text-align: center;
+    font-size:1.25em;
+    padding: 5px;
+    color: var(--color-oscuro);
+    text-decoration: none;
+  }
+ 
+aside > P
+  {
+    font-size: .7em;
+    text-align: justify;
+    text-indent: 30px;
+    initial-letter: var(--color-secundario);
+    padding-top: 10px;
+  }
   /* footer es el pie de página y aparece en todas y cada una de las paginas de nuestra web */
 
 footer
@@ -218,7 +231,7 @@ button:hover
 
 .imagen-noticia
 {
-  width: 90%;
+  width: 95%;
   background-color: white;
   text-align: center;
   padding: 10px; 
